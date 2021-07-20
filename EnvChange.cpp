@@ -9,7 +9,7 @@ extern "C" int MakeSomeNoise() {
   
   setenv(Varname, VarValue, true);
 
-  std::cout << VarValue;
+  std::cout << VarValue << std::endl;
 
   std::ofstream outfile (Varname);
   outfile << VarValue << std::endl;
